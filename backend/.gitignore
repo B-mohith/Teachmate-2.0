@@ -1,0 +1,33 @@
+# --- Operating System Files ---
+.DS_Store
+Thumbs.db
+db.json
+
+# --- IDEs and Editors ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# --- Environment Secrets (CRITICAL) ---
+.env
+.env.local
+.env.*.local
+*.env
+auth.json
+
+# --- Docker ---
+.docker/
+docker-compose.override.yml
+*.log
+logs/
+*.pid
+
+# --- Common Language Packages (Just in case) ---
+node_modules/
+__pycache__/
+*.pyc
+venv/
+.venv/
