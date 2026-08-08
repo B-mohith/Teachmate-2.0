@@ -45,3 +45,15 @@ class CourseResponse(CourseBase):
     created_at: Optional[datetime] = None
 
     model_config = ConfigDict(from_attributes=True)
+
+# Add at the bottom of app/schemas.py
+
+class Token(BaseModel):
+    """Schema for returning JWT access tokens."""
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    """Schema for internal token payload extraction."""
+    user_id: Optional[str] = None
